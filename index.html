@@ -5,184 +5,91 @@
   <title>MLT CNC & 3D</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonte moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-      background-color: #0b0f14;
-      color: #eaeaea;
-    }
-
-    header {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #0f1e33, #05070a);
+      background-color: #000000;
+      color: #ffffff;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
       text-align: center;
       padding: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #1e90ff;
-      letter-spacing: 2px;
-    }
-
-    header span {
-      color: #ffffff;
-    }
-
-    header p {
-      margin-top: 15px;
-      font-size: 1.2rem;
-      color: #b5b5b5;
       max-width: 600px;
     }
 
+    .logo {
+      max-width: 320px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #1e90ff;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
     .btn {
-      margin-top: 35px;
-      padding: 16px 36px;
-      background: linear-gradient(135deg, #1e90ff, #4da3ff);
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: #1e90ff;
       color: #000;
-      font-weight: 600;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 50px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 6px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px #1e90ff66;
-    }
-
-    section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2.3rem;
-      margin-bottom: 30px;
-      color: #1e90ff;
-    }
-
-    .about p {
-      font-size: 1.1rem;
-      color: #cfcfcf;
-      max-width: 800px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: linear-gradient(180deg, #0f141c, #090c11);
-      padding: 35px;
-      border-radius: 16px;
-      border: 1px solid #1e90ff22;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 40px #1e90ff22;
-    }
-
-    .card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 12px;
-      color: #1e90ff;
-    }
-
-    .card p {
-      color: #bbbbbb;
-      font-size: 1rem;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 70px;
+      background-color: #4da3ff;
+      box-shadow: 0 0 20px #1e90ff88;
     }
 
     footer {
-      padding: 25px;
-      text-align: center;
-      background-color: #05070a;
-      color: #777;
-      font-size: 0.9rem;
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>MLT <span>CNC & 3D</span></h1>
+  <div class="container">
+    <img src="logo.png" alt="MLT CNC & 3D" class="logo">
+
+    <h1>CNC & IMPRESSÃO 3D</h1>
+
     <p>
-      Usinagem CNC e Impressão 3D com precisão, tecnologia e soluções sob medida.
+      Soluções em usinagem CNC e impressão 3D  
+      com precisão e qualidade profissional.
     </p>
+
     <a class="btn" href="https://wa.me/5519999945183" target="_blank">
       Solicitar Orçamento
     </a>
-  </header>
-
-  <section class="about">
-    <h2>Quem Somos</h2>
-    <p>
-      A MLT CNC & 3D atua no desenvolvimento de peças técnicas, protótipos e soluções
-      personalizadas em usinagem CNC e impressão 3D, unindo tecnologia, qualidade e
-      acabamento profissional.
-    </p>
-  </section>
-
-  <section>
-    <h2>Serviços</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Usinagem CNC</h3>
-        <p>
-          Corte, fresagem e fabricação de peças técnicas com alta precisão e repetibilidade.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Impressão 3D</h3>
-        <p>
-          Prototipagem rápida, peças funcionais e projetos personalizados em 3D.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Projetos Sob Medida</h3>
-        <p>
-          Desenvolvimento de soluções conforme a necessidade do cliente.
-        </p>
-      </div>
-    </div>
-
-    <div class="cta">
-      <a class="btn" href="https://wa.me/5519999945183" target="_blank">
-        Falar no WhatsApp
-      </a>
-    </div>
-  </section>
+  </div>
 
   <footer>
-    © 2026 — MLT CNC & 3D • Tecnologia e Precisão
+    © 2026 — MLT CNC & 3D
   </footer>
 
 </body>
