@@ -4,121 +4,62 @@
   <meta charset="UTF-8">
   <title>MLT CNC & 3D</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MLT CNC & 3D - Serviços de usinagem CNC e impressão 3D sob medida.">
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: #0f0f0f;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0b0f14;
+      color: #eaeaea;
+    }
+
+    header {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0f1e33, #05070a);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1e90ff;
+      letter-spacing: 2px;
+    }
+
+    header span {
       color: #ffffff;
     }
-    header {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #b5b5b5;
+      max-width: 600px;
     }
-    header h1 {
-      font-size: 24px;
-      margin: 0;
-    }
-    header span {
-      color: #1e90ff;
-    }
-    section {
-      padding: 80px 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .hero {
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 18px;
-      color: #cccccc;
-    }
+
     .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background: #1e90ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
+      margin-top: 35px;
+      padding: 16px 36px;
+      background: linear-gradient(135deg, #1e90ff, #4da3ff);
+      color: #000;
       font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #1e90ff;
-    }
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: #000;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
 
-<header>
-  <h1>MLT CNC <span>& 3D</span></h1>
-</header>
-
-<section class="hero">
-  <h2>Precisão em cada corte</h2>
-  <p>CNC & Impressão 3D sob medida</p>
-  <a class="btn" href="https://wa.me/5519999945183?text=Olá%2C%20vim%20pelo%20site%20da%20MLT%20CNC%20%26%203D%20e%20gostaria%20de%20um%20orçamento." target="_blank">
-    Solicitar orçamento
-  </a>
-</section>
-
-<section>
-  <h2>Serviços</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Router CNC</h3>
-      <p>Cortes precisos em diversos materiais.</p>
-    </div>
-    <div class="card">
-      <h3>Impressão 3D</h3>
-      <p>Peças funcionais e protótipos.</p>
-    </div>
-    <div class="card">
-      <h3>Prototipagem</h3>
-      <p>Do projeto à peça final.</p>
-    </div>
-    <div class="card">
-      <h3>Corte Técnico</h3>
-      <p>Soluções sob medida.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Contato</h2>
-  <p>Entre em contato pelo WhatsApp para orçamentos e dúvidas.</p>
-  <a class="btn" href="https://wa.me/5519999945183" target="_blank">Falar no WhatsApp</a>
-</section>
-
-<footer>
-  © 2026 MLT CNC & 3D — Todos os direitos reservados
-</footer>
-
-</body>
-</html>
+    .btn:hover {
+      transform: translateY(-
