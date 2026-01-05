@@ -14,64 +14,68 @@
     }
 
     body {
-      background-color: #0e0e0e;
+      background-color: #0b0b0b;
       color: #ffffff;
     }
 
     header {
       background-color: #000;
-      padding: 25px 40px;
+      padding: 20px 50px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #1e90ff33;
     }
 
-    header h1 {
-      font-size: 1.4rem;
-      color: #1e90ff;
+    header img {
+      height: 50px;
     }
 
     section {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
       padding: 80px 40px;
     }
 
     .hero {
       text-align: center;
-      padding-top: 100px;
+      padding-top: 120px;
     }
 
-    .hero h2 {
-      font-size: 3rem;
+    .hero h1 {
+      font-size: 3.2rem;
       margin-bottom: 20px;
     }
 
     .hero p {
-      color: #cccccc;
       font-size: 1.2rem;
-      margin-bottom: 35px;
+      color: #cccccc;
+      margin-bottom: 40px;
     }
 
     .btn {
       background-color: #1e90ff;
       color: #000;
-      padding: 16px 36px;
-      text-decoration: none;
+      padding: 16px 40px;
       font-weight: bold;
+      text-decoration: none;
       border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0f6cd6;
+      color: #fff;
     }
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
       margin-top: 60px;
     }
 
     .card {
-      background-color: #151515;
+      background-color: #141414;
       padding: 30px;
       border-radius: 10px;
       border: 1px solid #1e90ff22;
@@ -82,24 +86,44 @@
       margin-bottom: 10px;
     }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #000;
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .portfolio div {
+      background-color: #121212;
+      height: 180px;
+      border-radius: 8px;
+      border: 1px dashed #1e90ff55;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #777;
       font-size: 0.9rem;
     }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #777;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>MLT CNC & 3D</h1>
+  <img src="logo.png" alt="MLT CNC & 3D">
 </header>
 
 <section class="hero">
-  <h2>Precisão em cada corte</h2>
-  <p>Usinagem CNC e Impressão 3D sob medida</p>
+  <h1>MLT CNC & 3D</h1>
+  <p>Serviços profissionais de Router CNC e Impressão 3D</p>
 
   <a class="btn" href="https://wa.me/5519999945183" target="_blank">
     Solicitar orçamento
@@ -107,26 +131,38 @@
 </section>
 
 <section>
+  <h2 style="text-align:center;">Serviços</h2>
+
   <div class="services">
     <div class="card">
       <h3>Router CNC</h3>
-      <p>Cortes precisos e acabamento profissional.</p>
+      <p>Cortes precisos em MDF, acrílico, madeira e outros materiais.</p>
     </div>
 
     <div class="card">
       <h3>Impressão 3D</h3>
-      <p>Protótipos e peças funcionais em diversos materiais.</p>
+      <p>Protótipos, peças técnicas e projetos personalizados.</p>
     </div>
 
     <div class="card">
       <h3>Prototipagem</h3>
-      <p>Do projeto à peça final.</p>
+      <p>Do modelo digital até a peça final.</p>
     </div>
   </div>
 </section>
 
+<section>
+  <h2 style="text-align:center;">Portfólio</h2>
+
+  <div class="portfolio">
+    <div>Projeto CNC</div>
+    <div>Impressão 3D</div>
+    <div>Peça técnica</div>
+  </div>
+</section>
+
 <footer>
-  © 2026 — MLT CNC & 3D
+  © 2026 — MLT CNC & 3D • Todos os direitos reservados
 </footer>
 
 </body>
